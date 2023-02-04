@@ -23,7 +23,7 @@ module.exports = {
       }),
       fontFamily : {
         poppins: ["Poppins", "sans-serif"],
-        monserrat: ["Monserrat", "sans-serif"],
+        monserrat: ["Montserrat", "sans-serif"],
       },
       content : {
         evolvetext: "url('./assets/EvolveText.png')",
