@@ -16,8 +16,27 @@ module.exports = {
         "primary-500": "#FF6B66",
         "secondary-400": "#FFCD58",
         "secondary-500": "#FFC132",
+      },
+      backgroundImage: (theme) => ({
+        "gradient-yellowred":"linier-gradient(90deg, #FF616A 0%, #FFC837 100%)",
+        "mobile-home": "url('./assets/HomePageGraphic.png')"
+      }),
+      fontFamily : {
+        poppins: ["Poppins", "sans-serif"],
+        monserrat: ["Monserrat", "sans-serif"],
+      },
+      content : {
+        evolvetext: "url('./assets/EvolveText.png')",
+        abstractwaves: "url('./assets/AbstractWaves.png')",
+        sparkles: "url('./assets/Sparkles.png')",
+        circles: "url('./assets/Circles.png')",
       }
     },
+    screens : {
+      xs : "480px",
+      sm : "720px",
+      md : "1060px",
+    }
   },
   plugins: [],
 }
