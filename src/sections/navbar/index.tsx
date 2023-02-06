@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid"
 import Logo from "@/assets/Logo.png"
+import Link from "./Link"
 
 type Props = {
     selectedPage: string;
@@ -16,7 +17,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
             <div className={`${flexBetween} w-full gap-16`}>
                 {/* Left Side */}
                 <img src={Logo} />
-
+ 
                 {/* Right Side */}
                 <div className={`${flexBetween} w-full`}>
                     <div className={`${flexBetween} gap-8 text-sm`} >
