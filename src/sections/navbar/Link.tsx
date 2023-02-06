@@ -4,7 +4,6 @@ type Props = {
     page: string;
     selectedPage: string;
     setSelectedPage: (value: string) => void;
-
 }
 
 const Link = ({
