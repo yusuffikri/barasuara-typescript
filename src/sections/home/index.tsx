@@ -7,6 +7,8 @@ import SponsorRedbull from '@/assets/SponsorRedbull.png';
 import SponsorForbes from '@/assets/SponsorForbes.png';
 import SponsorFortune from '@/assets/SponsorFortune.png';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { motion } from 'framer-motion';
+
 
 type Props = {
     setSelectedPage: (value: SelectedPage) => void;
@@ -22,7 +24,7 @@ const index = ({setSelectedPage}: Props) => {
         {/* Main Header */}
         <div className='z-10 mt-32 md:basis-3/5'>
             {/* Heading */}
-            <div className='md:-mt-20'>
+            <motion.div className='md:-mt-20' initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.5}}>
                 <div className='relative'> 
                     <div className='before:absolute before:-top-20  before:-left-20 before:z-[-1] md:before:content-evolvetext'>
                         <img src={HomePageText} alt="homepage-text" />
@@ -32,7 +34,7 @@ const index = ({setSelectedPage}: Props) => {
                 <p className='mt-8 text-sm'>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. At maxime fuga excepturi labore quia necessitatibus ex vitae? Quos, omnis quidem?
                 </p>
-            </div>
+            </motion.div>
             {/* Action Button */}
             <div className='mt-8 flex items-center gap-8'>
                 <ActionButton setSelectedPage={setSelectedPage}>
@@ -51,9 +53,9 @@ const index = ({setSelectedPage}: Props) => {
 
     {/* Sponsor */}
     {isAboveMediumScreens && (
-        <div>
-            <div>
-                <div>
+        <div className='h-[150px] w-full bg-primary-100 py-10 '>
+            <div className='mx-auto w-5/6'>
+                <div className='flex w-3/5 items-center justify-between gap-8'>
                     <img src={SponsorRedbull} alt="redbull" />
                     <img src={SponsorForbes} alt="forbess" />
                     <img src={SponsorFortune} alt="fortune" />
