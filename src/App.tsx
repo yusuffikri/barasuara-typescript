@@ -1,8 +1,9 @@
 import Navbar from '@/sections/navbar';
 import Home from '@/sections/home';
-import Benefits from '@/sections/benefits';
 import { useEffect, useState } from 'react';
 import { SelectedPage } from '@/shared/types';
+import Benefits from './sections/benefits';
+
 
 
 
