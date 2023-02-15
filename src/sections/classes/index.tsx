@@ -7,6 +7,7 @@ import image5  from '@/assets/image5.png';
 import image6  from '@/assets/image6.png';
 import {motion } from 'framer-motion';
 import HText from '@/shared/HText';
+import Class from './Class';
 
 const ourclass: Array<ClassType> = [
     {
