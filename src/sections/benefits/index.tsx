@@ -61,11 +61,11 @@ const Benefits = ({setSelectedPage}: Props) => {
         <img src={BenefitsPageGraphic} alt="benefits-page-graphic" className="mx-auto" />
 
         {/* Description */}
-        <div initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.5}} transition={{delay: 0.2, duration: 0.5}} variants={{ hidden: {opacity: 0, x:-50},
+        <div>
+          {/* Title */}
+        <motion.div initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.5}} transition={{delay: 0.2, duration: 0.5}} variants={{ hidden: {opacity: 0, x:-50},
         visible: {opacity: 1, x: 0},
        }}>
-          {/* Title */}
-        <motion.div>
           <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
             <div>
               <HText>
@@ -75,7 +75,7 @@ const Benefits = ({setSelectedPage}: Props) => {
             </div>
 
           </div>
-        </div>
+        </motion.div>
           {/* Descript */}
           <div>
             <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt deleniti quos numquam nisi earum sit aliquam quidem optio, sint in facere reiciendis quam facilis repudiandae, sunt nam quia dolor. Ab quae perferendis ducimus cupiditate, perspiciatis impedit consequuntur fugit distinctio vitae excepturi, facere, nihil accusantium corrupti commodi consectetur.</p>
