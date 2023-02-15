@@ -77,10 +77,12 @@ const Benefits = ({setSelectedPage}: Props) => {
           </div>
         </motion.div>
           {/* Descript */}
-          <div>
+          <motion.div initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.5}} transition={{delay: 0.2, duration: 0.5}} variants={{ hidden: {opacity: 0, x:-50},
+        visible: {opacity: 1, x: 0},
+       }} >
             <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt deleniti quos numquam nisi earum sit aliquam quidem optio, sint in facere reiciendis quam facilis repudiandae, sunt nam quia dolor. Ab quae perferendis ducimus cupiditate, perspiciatis impedit consequuntur fugit distinctio vitae excepturi, facere, nihil accusantium corrupti commodi consectetur.</p>
             <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, maxime sapiente praesentium impedit iste quia officiis quam reprehenderit laboriosam, magni iusto eaque, deleniti exercitationem consectetur. Recusandae reiciendis blanditiis cum minima eius. Nihil omnis numquam eaque pariatur.</p>
-          </div>
+          </motion.div>
 
           {/* Button */}
           <div className="relative mt-16">
