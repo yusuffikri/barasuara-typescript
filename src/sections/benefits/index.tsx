@@ -4,6 +4,7 @@ import { BenefitType, SelectedPage } from "@/shared/types"
 import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
+import BenefitsPageGraphic from '@/assets/BenefitsPageGraphic.png';
 
 
 
@@ -55,9 +56,9 @@ const Benefits = ({setSelectedPage}: Props) => {
             </motion.div>
           
        {/* Graphic And Description */}
-       <div>
+       <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
         {/* Graphic */}
-        <img src="" alt="" />
+        <img src={BenefitsPageGraphic} alt="benefits-page-graphic" className="mx-auto" />
 
         {/* Description */}
         <div>
