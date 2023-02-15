@@ -61,9 +61,11 @@ const Benefits = ({setSelectedPage}: Props) => {
         <img src={BenefitsPageGraphic} alt="benefits-page-graphic" className="mx-auto" />
 
         {/* Description */}
-        <div>
+        <div initial='hidden' whileInView='visible' viewport={{once: true, amount: 0.5}} transition={{delay: 0.2, duration: 0.5}} variants={{ hidden: {opacity: 0, x:-50},
+        visible: {opacity: 1, x: 0},
+       }}>
           {/* Title */}
-        <div className="relative">
+        <motion.div>
           <div className="before:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
             <div>
               <HText>
