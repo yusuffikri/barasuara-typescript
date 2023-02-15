@@ -1,8 +1,10 @@
+import ActionButton from "@/shared/ActionButton";
 import HText from "@/shared/HText";
 import { BenefitType, SelectedPage } from "@/shared/types"
 import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
+
 
 
 const benefits: Array<BenefitType> = [
@@ -72,8 +74,20 @@ const Benefits = ({setSelectedPage}: Props) => {
           </div>
         </div>
           {/* Descript */}
+          <div>
+            <p className="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut deserunt deleniti quos numquam nisi earum sit aliquam quidem optio, sint in facere reiciendis quam facilis repudiandae, sunt nam quia dolor. Ab quae perferendis ducimus cupiditate, perspiciatis impedit consequuntur fugit distinctio vitae excepturi, facere, nihil accusantium corrupti commodi consectetur.</p>
+            <p className="mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, maxime sapiente praesentium impedit iste quia officiis quam reprehenderit laboriosam, magni iusto eaque, deleniti exercitationem consectetur. Recusandae reiciendis blanditiis cum minima eius. Nihil omnis numquam eaque pariatur.</p>
+          </div>
 
           {/* Button */}
+          <div className="relative mt-16">
+            <div className="before:absolute before:-bottom-20 before:right before:-z-[-1]before:content-sparkless">
+              <ActionButton setSelectedPage={setSelectedPage}>
+                Join Now
+              </ActionButton>
+            </div>
+
+          </div>
 
         </div>
        </div>
