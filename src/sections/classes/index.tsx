@@ -1,4 +1,4 @@
-import { SelectedPage } from '@/shared/types';
+import { SelectedPage, ClassType } from '@/shared/types';
 import image1  from '@/assets/image1.png';
 import image2  from '@/assets/image2.png';
 import image3  from '@/assets/image3.png';
@@ -64,8 +64,8 @@ const Classes = ({setSelectedPage}: Props) => {
         </motion.div>
         <div className='mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden'>
             <ul className='w-[2800px] whitespace-nowrap'>
-                {ourclass.map((item, index,) => (
-                    <Class/> 
+                {ourclass.map((item: ClassType, index,) => (
+                    <Class key={`${item.name}-${index}`} name={item.name} description={item.description} image={item.image}/> 
                 ))}
             </ul>
         </div>
