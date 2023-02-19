@@ -15,3 +15,5 @@ const Class = ({ name, description = "some description", image }: Props) => {
         </div>
     </li>
 }
+
+export default Class
