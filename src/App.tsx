@@ -4,6 +4,7 @@ import Home from '@/sections/home';
 import { useEffect, useState } from 'react';
 import { SelectedPage } from '@/shared/types';
 import Benefits from './sections/benefits';
+import {contact} from '@/sections/Contact'
 
 
 
