@@ -14,7 +14,7 @@ type Props = {
 const Contacts
  = ({setSelectedPage}: Props) => {
 
-  const inputStyles = `w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+  const inputStyles = `mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
   const { register, trigger, formState: { errors }} = useForm();
 
@@ -70,7 +70,7 @@ const Contacts
                 </p>
               )}
 
-                <input className={inputStyles} type="text" placeholder="Your message.." {...register("message", {
+                <textarea className={inputStyles} rows={4} cols={50} placeholder="Your message.." {...register("message", {
                 required: true,
                 maxLength: 2000,
               })} />
