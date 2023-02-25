@@ -6,12 +6,12 @@ type Props = {
     setSelectedPage: (value: SelectedPage) => void;
 }
 
-const Contact
+const Contacts
  = (setSelectedPage: Props) => {
   return (
-    <div>Contact
+    <div>Contacts
     </div>
   )
 }
 
-export default Contact
+export default Contacts

@@ -4,7 +4,7 @@ import Home from '@/sections/home';
 import { useEffect, useState } from 'react';
 import { SelectedPage } from '@/shared/types';
 import Benefits from './sections/benefits';
-import { Contact } from '@/sections/Contact';
+import Contacts from '@/sections/contacts';
 
 
 
@@ -33,7 +33,7 @@ function App({}){
   <Home setSelectedPage={setSelectedPage}   />
   <Benefits setSelectedPage={setSelectedPage}   />
   <Classes  setSelectedPage={setSelectedPage}   />
-  <Contact setSelectedPage={setSelectedPage}   />
+  <Contacts setSelectedPage={setSelectedPage}   />
   </div>);
 }
 
