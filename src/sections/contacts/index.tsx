@@ -47,7 +47,7 @@ const Contacts
         visible: {opacity: 1, y: 0},
        }}>
             <form target="_blank" onSubmit={onSubmit} action="https://formsubmit.co/yusuffiks99@email.com" method="POST">
-
+              {/* Name */}
               <input className={inputStyles} type="text" placeholder="Your name.." {...register("name", {
                 required: true,
                 maxLength: 100,
@@ -58,7 +58,7 @@ const Contacts
                   {errors.name.type === "maxLength" && "Maxlength is 100 character."}
                 </p>
               )}
-
+                {/* Email */}
                 <input className={inputStyles} type="text" placeholder="Your email.." {...register("email", {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\[A-Z]{2,}$/i,
@@ -66,7 +66,18 @@ const Contacts
               {errors.email && (
                 <p className="mt-1 text-primary-500">
                   {errors.email.type === "required" && "This field is required."}
-                  {errors.email.type === "maxLength" && "Maxlength is 100 character."}
+                  {errors.email.type === "pattern" && "Invalid email address."}
+                </p>
+              )}
+
+                <input className={inputStyles} type="text" placeholder="Your message.." {...register("message", {
+                required: true,
+                maxLength: 2000,
+              })} />
+              {errors.message && (
+                <p className="mt-1 text-primary-500">
+                  {errors.message.type === "required" && "This field is required."}
+                  {errors.message.type === "maxLength" && "Maxlength is 2000 character."}
                 </p>
               )}
             </form>
