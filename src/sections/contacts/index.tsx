@@ -1,5 +1,7 @@
 import { SelectedPage } from "@/shared/types"
 import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic"
 
 
 type Props = {
@@ -7,7 +9,7 @@ type Props = {
 }
 
 const Contacts
- = (setSelectedPage: Props) => {
+ = ({setSelectedPage}: Props) => {
   return (
     <div>Contacts
     </div>
