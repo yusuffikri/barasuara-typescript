@@ -80,6 +80,10 @@ const Contacts
                   {errors.message.type === "maxLength" && "Maxlength is 2000 character."}
                 </p>
               )}
+
+              <button type="submit" className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white ">
+                Submit
+              </button>
             </form>
           </motion.div>
         </div>
