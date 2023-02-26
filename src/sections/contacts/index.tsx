@@ -14,7 +14,7 @@ type Props = {
 const Contacts
  = ({setSelectedPage}: Props) => {
 
-  const inputStyles = `mt-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
+  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`;
 
   const { register, trigger, formState: { errors }} = useForm();
 
